@@ -4,25 +4,24 @@
 
 #include <iostream>
 #include <cmath>
-#include <cstdlib>
-#include <ctime>
 
 using namespace std;
 
 int main()
 {
-  int n; // number of days
+  int n; // number of cases
 
   cout << "Enter n: ";
   cin >> n;
 
-  srand(time(NULL));
+  int days = 0; // days to wait to launch rocket
 
-  for(int i = 0; i < n; i++)
+
+  for(int i = 1; i < n; i++)
     {
       int junk;
 
-      junk = rand() % (10000000000);
+      junk = 
 
     }
 
