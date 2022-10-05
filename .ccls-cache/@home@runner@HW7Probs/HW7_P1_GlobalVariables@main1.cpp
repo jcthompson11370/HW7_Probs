@@ -17,7 +17,7 @@ bool Flag_END = 1;
 /********************* Function Prototypes *********************/
 double instantVelocity(double);
 double metersPerStoMPH(double);
-void time2Fall(double); // new variable w/ Shanghai Tower
+void time2Fall(); 
 void time2Fall(double); // overloading of the time2Fall function
 
 /***************************** Main ****************************/
@@ -25,8 +25,8 @@ int main()
 {
     
     // local variables to main
-    double tm;                // time in seconds
-    double vi;                  // instantaneous velocity in m/s
+    double tm; // time in seconds
+    double vi; // instantaneous velocity in m/s
     
     // Determine the instantaneous velocities until the user decides not to continue
     do 
@@ -49,7 +49,7 @@ int main()
     // note: the Empire State Building is 381 m tall. (automatic time2Fall function)
   
     //note: new height variable is 632.0 m for Shanghai Tower
-    time2Fall(632.0);
+    time2Fall();
 
     // The height of the Burj Khalifa in Dubai is 828 meters
     time2Fall(828.0);
