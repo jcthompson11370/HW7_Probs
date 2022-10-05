@@ -10,27 +10,31 @@
 
 using namespace std;
 
-void time();
+void time(int seconds, int &hours, int &mins, int &secs);
 
 int main()
 {
+  int seconds, hours, mins, secs;
 
-
+  time(seconds, &hours, &mins, &secs);
+    
+  cout << "Hours: " << hours << endl;
+  cout << "Minutes: " << mins << endl;
+  cout << "Seconds: " << secs << endl;
   
+
+  return 0;
 }
 
 void time(int seconds, int &hours, int &mins, int &secs)
 {
   double T;  // total seconds before conversion
 
-  T = (seconds / 3600);
+  T = (seconds % 3600);
 
   hours = (seconds / (60 * 60));
-
   mins = (seconds / 60);
-
-  secs = T / 60; // left over seconds
-
-
+  secs = (T / 60); // left over seconds
   
+
 }
