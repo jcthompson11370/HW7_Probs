@@ -16,7 +16,8 @@ int main()
 
   int days = 0; // days to wait to launch rocket
 
-
+  
+  
   for(int i = 1; i < n; i++)
     {
       int junk;
