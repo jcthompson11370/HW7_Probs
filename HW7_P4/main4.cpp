@@ -7,24 +7,27 @@
 
 using namespace std;
 
-int main()
-{
-  int n; // number of cases
+int indexSmallestElement(const int list[], int listSize){
 
-  cout << "Enter n: ";
+  int minIndex = 0;
+
+  int n;
+  cout << "enter n: ";
   cin >> n;
 
-  int days = 0; // days to wait to launch rocket
+  const int Narray = n;
+
+  int listA[Narray];
+
+
+
+  for(int n = 1; n < listSize; n++){
+
+    int  
+    if (list[minIndex] > list[n])
+      minIndex = n;
+  }
 
   
-  
-  for(int i = 1; i < n; i++)
-    {
-      int junk;
-
-      junk = 
-
-    }
-
-  return 0;
+  return minIndex;
 }
