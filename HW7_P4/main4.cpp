@@ -29,9 +29,10 @@ int main(){
         }
     }
     cout << "The number of days to wait is: " << days << endl; //days to wait
+
+    // NOTE: DELETE ALL COUT QUOTATIONS FOR KATTIS SUBMISSION!
   
   return 0;
- 
 }
 
 
