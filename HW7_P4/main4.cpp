@@ -6,28 +6,30 @@
 #include <cmath>
 
 using namespace std;
-
-int indexSmallestElement(const int list[], int listSize){
-
-  int minIndex = 0;
-
-  int n;
-  cout << "enter n: ";
-  cin >> n;
-
-  const int Narray = n;
-
-  int listA[Narray];
-
-
-
-  for(int n = 1; n < listSize; n++){
-
-    int  
-    if (list[minIndex] > list[n])
-      minIndex = n;
-  }
-
+int main(){
   
-  return minIndex;
+  int n;
+  cin >> n;    // number of test cases
+  
+  int count;
+  cin >> count;    //day numbers mixed
+  
+  int days = 0; // start from zero
+  
+  for (int i = 1; i < n; i++) {
+    
+    int a;            
+    cin >> a;
+    
+    if (a < count) {    //if a is less than number, then replace it
+      days = i;
+      count = a;
+        }
+    }
+    cout << days; //days to wait
+  
+  return 0;
+ 
 }
+
+

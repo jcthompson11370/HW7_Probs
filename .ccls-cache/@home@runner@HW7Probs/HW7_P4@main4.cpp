@@ -19,12 +19,11 @@ int indexSmallestElement(const int list[], int listSize){
 
   int listA[Narray];
 
+  for(int i = 0; i < n; i++){
 
-
-  for(int n = 1; n < listSize; n++){
-
-    int  
-    if (list[minIndex] > list[n])
+    cin >> listSize;
+      
+    if (listA[minIndex] > listA[n])
       minIndex = n;
   }
 
